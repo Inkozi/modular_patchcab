@@ -1,0 +1,50 @@
+
+
+VOICE 1:
+    - Hermod (pitch1) p> Plaits (1voct)
+    - Hermod (gate1) g> Maths (trig1)
+    - Maths (sig1) >> Plaits (level)
+    - Plaits (out) -> Disting (x)
+    - Plaits (out) -> QuadVCA (in3)
+    - Disting (a) -> mixer (top4)
+    - QuadVCA (out3) -> Chronoblob2 (inL)
+    - Batumi (square1) g> Chronoblob2 (sync)
+    - Chronoblob2 (outL) -> mixer (bot4)
+
+
+VOICE 2:
+    - Hermod (pitch2) p> STO (1voct)
+    - Hermod (gate2) g> Maths (trig4)
+    - Maths (sig4) >> QuadVCA (cvin4)
+    - QuadSwitch (bot2) -> Spectrus (inR)
+    - QuadVCA (out4) -> Spectrus (inR)
+    - STO (saw/sine) -> QuadVCA (in4)
+    - Spectrus (outR) -> mixer (top3)
+
+VOICE 3:
+    - Hermod (pitch4) p> Rings (1voct)
+    - Rings (outodd) -> QuadVCA (in1)
+    - EuclideanCircles (out6) g> Rings (strum)
+    - QuadVCA (out1) -> Beads (inL)
+    - Beads (outL) -> Ripples (in)
+    - Ripples (lp4) -> mixer (top2)
+
+
+VOICE 4:
+    - Hermod (gate7) g> Instruo (record1)
+    - Lubadh (inL) -> QuadSwitch (mid2)
+    - Lubadh (auxR) -> mixer (bot1)
+
+VOICE 5:
+    - Hermod (pitch8) p> SMR (rotatecv)
+    - EuclideanCircles (out1) g> SMR (levelcv1)
+    - EuclideanCircles (out3) g> SMR (levelcv3)
+    - EuclideanCircles (out3) g> SMR (levelcv4)
+    - EuclideanCircles (out2) g> SMR (levelcv6)
+    - SMR (out) -> QuadSwitch (top2)
+    - SMR (out) -> mixer (top1)
+
+
+CLOCK:
+    - Batumi (square1) g> EuclideanCircles (clock)
+
